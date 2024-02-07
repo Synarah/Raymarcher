@@ -1,4 +1,4 @@
-project(pixmap-ops)
+project(raymarcher)
 cmake_minimum_required(VERSION 3.0)
 
 if (WIN32) # Include win64 platforms
@@ -54,4 +54,7 @@ target_link_libraries(pixmap_test)
 
 add_executable(pixmap_art src/pixmap_art.cpp src/image.cpp src/image.h)
 target_link_libraries(pixmap_art)
+
+add_executable(raymarcher src/raymarcher.cpp src/image.cpp src/image.h)
+target_link_libraries(raymarcher)
 
